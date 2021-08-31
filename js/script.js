@@ -4,6 +4,10 @@ const crifrador = document.getElementById('cifrador')
 const resultado = document.getElementById('resultado')
 const range = document.getElementById('range')
 
+var cifraCesar = document.getElementById('cifraCesar')
+var base64 = document.getElementById('base64')
+
+
 const tudoMaiusculo = () => {
     const arrayDePalavras = [...inputOriginal.value.toUpperCase()]
     printChar(0, arrayDePalavras)
@@ -32,4 +36,6 @@ const submit = e => {
 }
 
 crifrador.onsubmit = submit
+
+
 

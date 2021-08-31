@@ -10,6 +10,14 @@
 </head>
 <body>
     <main>
+        <section>
+            <div>
+                <input type="radio" id="cifraCesar" name="radioBtn">Cifra de Cesar
+            </div>
+            <div>
+                <input type="radio" id="base64" name="radioBtn">Base64
+            </div>
+        </section>
         <h1>Cifrador</h1>
         <form action="" id="cifrador" autocomplete="off">
             <input type="text" id="input-original" spellcheck="false" placeholder="Insira o texto" name="text">
@@ -17,8 +25,7 @@
         <div id="resultado"></div>
         <div class="range">
             <input type="range" id="range" value="10" min="1" max="26" oninput="this.nextElementSibling.value = this.value">
-            <output>10</output>
-    
+            <output>10</output>    
         </div>       
         
     </main>    
