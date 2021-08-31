@@ -7,7 +7,18 @@ const range = document.getElementById('range')
 var cifraCesar = document.getElementById('cifraCesar')
 var base64 = document.getElementById('base64')
 
+var deslocamento = document.getElementById('cesar')
 
+cifraCesar.addEventListener('click', function () {
+    deslocamento.style.display = 'grid'    
+})
+
+base64.addEventListener('click', function () {
+    deslocamento.style.display = 'none'    
+})
+
+
+// codigo cifra de cesar
 const tudoMaiusculo = () => {
     const arrayDePalavras = [...inputOriginal.value.toUpperCase()]
     printChar(0, arrayDePalavras)
@@ -36,6 +47,7 @@ const submit = e => {
 }
 
 crifrador.onsubmit = submit
+
 
 
 
