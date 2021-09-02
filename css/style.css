@@ -14,9 +14,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5c4b7a;
+    background-color: black;
     color: white;
 }
+
+
 
 input, button {
     border: none;
@@ -26,6 +28,8 @@ input, button {
 main {
     padding: 25px;
     box-shadow: 8px 8px 35px 0px rgb(0 0 0 / 75%);
+    background-color: #5c4b7a;
+    border-radius: 15px;
 }
 
 h1 {
@@ -54,7 +58,12 @@ h1 {
     padding: 0 10px 10px;
     color: #5af78d;
     border-top-left-radius: var(--borda-redonda);
-    border-top-right-radius: var(--borda-redonda);    
+    border-top-right-radius: var(--borda-redonda);   
+    
+}
+
+#resultado {
+    text-transform: uppercase; 
 }
 
 #desloca {
@@ -83,6 +92,12 @@ input[type='range']::-webkit-slider-thumb {
     width: 10px;
 }
 
+#codOuDecod, #codOuDecodBase {
+    background: #292b36;
+    height: 30px;
+    color: #5af78d;
+    font-family: 'Source Code Pro', monospace;
+}
 
 
 

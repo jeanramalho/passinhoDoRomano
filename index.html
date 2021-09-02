@@ -18,19 +18,19 @@
                 <input type="radio" id="base64" name="radioBtn">Base64
             </div>
         </section>
-        <h1>Cifrador</h1>
+        <h1>CODIFICADOR</h1>
         <div id="cesar">
             <div>
-                <input type="checkbox" id="codificar" name="codeOuDecode" checked>codificar
+                <input type="checkbox" id="codificar" name="codeOuDecode" checked>Codificar
             </div>
             <div>
-                <input type="checkbox" id="decodificar" name="codeOuDecode">decodificar
+                <input type="checkbox" id="decodificar" name="codeOuDecode">Decodificar
             </div>
             <form action="" id="cifrador" autocomplete="off">
                 <input type="text" id="input-original" spellcheck="false" placeholder="Insira o texto" name="text">
-                <button type="submit">Traduzir</button>
+                <button type="submit" id="codOuDecod">CODIFICAR</button>
             </form>
-            <div id="resultado"></div>
+            <input type="text" name="" id="resultado" readonly="true">
 
             <div class="desloc" id='desloca'>
                 <input type="range" id="range" value="10" min="1" max="25" oninput="this.nextElementSibling.value = this.value">
@@ -40,14 +40,14 @@
 
         <div id="base">
             <div>
-                <input type="checkbox" id="codificarBase" name="codeOuDecode" checked>codificar
+                <input type="checkbox" id="codificarBase" name="codeOuDecode" checked>Codificar
             </div>
             <div>
-                <input type="checkbox" id="decodificarBase" name="codeOuDecode">decodificar
+                <input type="checkbox" id="decodificarBase" name="codeOuDecode">Decodificar
             </div>
             <form action="" id="cifradorBase64" autocomplete="off">
                 <input type="text" id="input-original-Base64" spellcheck="false" placeholder="Insira o texto" name="text">
-                <button type="submit">Traduzir</button>
+                <button type="submit" id="codOuDecodBase">CODIFICAR</button>
             </form>
             <div id="resultadoBase64"></div>
 
